@@ -1,0 +1,23 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /app2
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/scw?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource  #可以使用@Bean + @ConfigurationProperties(prefix = "spring.datasource")的方式
+  redis:
+    host: 192.168.204.130
+    #redis的主机地址
+    port: 6379
+
+
+
+
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+

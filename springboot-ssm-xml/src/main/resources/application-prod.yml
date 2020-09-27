@@ -1,0 +1,10 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /appProduct
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/scw
+    username: root
+    password: 123456
+
